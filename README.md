@@ -2,7 +2,6 @@
 
 Yet another project management tool
 
------------------------
 ## Strony
  + Projekty
  + Użytkownicy
@@ -10,3 +9,8 @@ Yet another project management tool
  + Pliki
  + Zadania
  + Dyskusja
+ 
+## Vendors
+
+## Inne
+
