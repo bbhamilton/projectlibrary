@@ -28,6 +28,18 @@ body {
     list-style: none;
     padding: 0;
     text-align: center; }
+    #main-nav ul li.menu-item-active a {
+      background-color: #d8d8d8;
+      background-image: url("../img/arrow.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      color: #303030 !important; }
+    #main-nav ul li.menu-item-active a:hover {
+      background-color: #d8d8d8 !important;
+      background-image: url("../img/arrow.png") !important;
+      background-repeat: no-repeat !important;
+      background-position: right !important;
+      color: #D05454 !important; }
     #main-nav ul li.menu-item-large a:hover {
       text-decoration: none;
       color: #6FBFB9;
@@ -73,6 +85,8 @@ main {
       background: transparent;
       border: 0;
       color: #7d7d7d; }
+    main header #user-profile:hover {
+      background: #232323; }
     main header #user-profile {
       width: 90px;
       height: 90px;

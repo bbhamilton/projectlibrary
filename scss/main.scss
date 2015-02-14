@@ -4,6 +4,7 @@ $c_lightgray: #F2F2F2;
 $c_sea: #6FBFB9;
 $c_darkgray: #303030;
 $c_purple: #906CA2;
+$c_red: #D05454;
 
 
 // GENERAL
@@ -46,6 +47,26 @@ body {
     list-style: none;
     padding: 0;
     text-align: center;
+
+    li.menu-item-active {
+
+      a {
+        background-color: darken($c_lightgray, 10%);
+        background-image: url('../img/arrow.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        color: $c_darkgray!important;
+      }
+
+      a:hover {
+        background-color: darken($c_lightgray, 10%)!important;
+        background-image: url('../img/arrow.png')!important;
+        background-repeat: no-repeat!important;
+        background-position: right!important;
+        color: $c_red!important;
+      }
+
+    }
 
     li.menu-item-large {
 
@@ -118,6 +139,10 @@ main {
       background: transparent;
       border: 0;
       color: lighten($c_darkgray, 30% );
+    }
+
+    #user-profile:hover {
+        background: darken($c_darkgray, 5%);
     }
 
     #user-profile {
