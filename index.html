@@ -2,24 +2,46 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>BLAST</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>BLAST</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/blast.png" rel="icon" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/icon-font.css">
+  <link rel="stylesheet" href="css/main.css">
 
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/main.css">
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
 
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-    </head>
-    <body>
+  <nav id="main-nav">
+      <ul>
+        <li id="logo"><a href="#"><img src="img/blast.png" alt="blast"></a></li>
+        <li class="menu-item-large"><a href="#"><i class="icon">-</i>activity</a></li>
+        <li class="menu-item-large"><a href="#"><i class="icon">&#xe026;</i>projects</a></li>
+        <li class="menu-item-large"><a href="#"><i class="icon">&#xe01a;</i>tasks</a></li>
+        <li class="menu-item-large"><a href="#"><i class="icon">V</i>users</a></li>
+      </ul>
+  </nav>
 
-        <script src="js/vandor/jquery-1.11.1.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+  <main>
+    <header>
+      <i class="icon">#</i>
+      <input type="text" placeholder="search for projects, tasks, users..." id="main-search">
+      <a href="#" id="user-profile"><div id="user-avatar" class="round"><img src="img/avatar.jpg"></div></a>
+    </header>
+  </main>
+
+
+
+
+  <script src="js/vendor/jquery-1.11.1.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+  <script src="js/vendor/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
