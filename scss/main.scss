@@ -45,6 +45,35 @@ body {
   height: 40px;
 }
 
+.project-cat1, .project-cat2, .project-cat3, .project-cat4, .project-cat5 {
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 2px 6px 0;
+  color: #fff;
+  display: inline-block;
+}
+
+.project-cat1 {
+  background: #27ae60;
+}
+
+.project-cat2 {
+  background: #c0392b;
+}
+
+.project-cat3 {
+  background: #2980b9;
+}
+
+.project-cat4 {
+  background: #2c3e50;
+}
+
+.project-cat5 {
+  background: #f39c12;
+}
+
 // NAVIGATION
 
 #main-nav {
@@ -136,7 +165,51 @@ main {
 
     #page-content {
       overflow: auto;
+      .project {
+        float: left;
+        height: 330px;
 
+        .project-content {
+          border: 1px solid darken($c_lightgray, 20%);
+          overflow: hidden;
+          border-radius: 2px;
+
+          h2 {
+            font-size: 20px;
+            padding: 0 20px;
+            text-transform: uppercase;
+            color: lighten($c_darkgray, 10%);
+            margin: 18px 0 6px;
+          }
+
+          p {
+            padding: 0 20px;
+            color: lighten($c_darkgray, 20%);
+
+          }
+
+          .project-categories {
+            padding: 0 20px;
+
+            a {
+              font-size: 10px;
+
+
+            }
+
+          }
+
+        }
+
+        .project-poster {
+          height: 120px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 
@@ -220,14 +293,11 @@ main {
 // RESPONSIVE WEB DESIGN
 
 @media (min-width:0px) {
-  .tile {
-
-    float: left;
-    height: 200px;
+  .project {
     width: 100%;
 
-    .tile-content {
-      background: $c_red;
+    .project-content {
+      background: #fff;
       width: calc(100% - 20px);
       height: calc(100% - 20px);
     }
@@ -236,16 +306,13 @@ main {
 }
 
 @media (min-width:650px) {
-  .tile {
-
-    float: left;
-    height: 200px;
+  .project {
     min-width: 250px;
     max-width: 400px;
     width: 50%;
 
-    .tile-content {
-      background: $c_red;
+    .project-content {
+      background: #fff;
       width: calc(100% - 20px);
       height: calc(100% - 20px);
     }
@@ -254,16 +321,13 @@ main {
 }
 
 @media (min-width:885px) {
-  .tile {
-
-    float: left;
-    height: 200px;
+  .project {
     min-width: 250px;
     max-width: 400px;
     width: 33%;
 
-    .tile-content {
-      background: $c_red;
+    .project-content {
+      background: #fff;
       width: calc(100% - 20px);
       height: calc(100% - 20px);
     }
@@ -272,16 +336,13 @@ main {
 }
 
 @media (min-width:1135px) {
-  .tile {
-
-    float: left;
-    height: 200px;
+  .project {
     min-width: 250px;
     max-width: 400px;
     width: 25%;
 
-    .tile-content {
-      background: $c_red;
+    .project-content {
+      background: #fff;
       width: calc(100% - 20px);
       height: calc(100% - 20px);
     }
@@ -290,16 +351,13 @@ main {
 }
 
 @media (min-width:1385px) {
-  .tile {
-
-    float: left;
-    height: 200px;
+  .project {
     min-width: 250px;
     max-width: 400px;
     width: 20%;
 
-    .tile-content {
-      background: $c_red;
+    .project-content {
+      background: #fff;
       width: calc(100% - 20px);
       height: calc(100% - 20px);
     }
