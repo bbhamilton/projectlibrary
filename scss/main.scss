@@ -6,6 +6,15 @@ $c_darkgray: #303030;
 $c_purple: #906CA2;
 $c_red: #D05454;
 
+// MIXINS
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
 
 // GENERAL
 
@@ -15,6 +24,7 @@ html, body {
 }
 
 body {
+  font-family: "FontAwesome";
   border-bottom: 5px solid $c_darkgray;
   border-right: 5px solid $c_darkgray;
 }
@@ -23,7 +33,7 @@ body {
     outline: 0;
 }
 
-.icon {
+.icon, .find-icon {
   font-family: "linea-basic-10";
   font-style: normal;
 }
@@ -31,8 +41,8 @@ body {
 .round {
   border-radius: 50%;
   overflow: hidden;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 // NAVIGATION
@@ -47,6 +57,8 @@ body {
     list-style: none;
     padding: 0;
     text-align: center;
+    position: relative;
+    height: calc(100% - 5px);
 
     li.menu-item-active {
 
@@ -63,9 +75,15 @@ body {
         background-image: url('../img/arrow.png')!important;
         background-repeat: no-repeat!important;
         background-position: right!important;
-        color: $c_red!important;
+        color: $c_sea!important;
       }
 
+    }
+
+    li.menu-item-last-element {
+      position: fixed;
+      bottom: 0;
+      width: 110px;
     }
 
     li.menu-item-large {
@@ -114,6 +132,20 @@ main {
   float: left;
   width: calc(100% - 110px);
 
+  .project-page {
+
+    #page-content {
+      overflow: auto;
+
+    }
+  }
+
+  #page-wrapper {
+
+    padding: 0 0 0 20px;
+
+  }
+
   header {
 
     width: 100%;
@@ -121,7 +153,7 @@ main {
     background: darken( $c_lightgray, 6% );
     padding: 0;
 
-    .icon {
+    .find-icon {
       color: lighten($c_darkgray, 30%);
       font-size: 16px;
       display: block;
@@ -141,24 +173,39 @@ main {
       color: lighten($c_darkgray, 30% );
     }
 
-    #user-profile:hover {
-        background: darken($c_darkgray, 5%);
-    }
-
-    #user-profile {
+    .top-nav-item {
       width: 90px;
       height: 90px;
       display: block;
-      border: 0;
-      background: $c_darkgray;
-      float: right;
+      float: left;
 
-      #user-avatar {
-        margin: 20px;
+      a {
+        width: 90px;
+        height: 90px;
+        display: block;
+        background: $c_darkgray;
+        overflow: auto;
+      }
 
-        img {
-          height: 100%;
-          width: 100%;
+    }
+
+    #user-profile {
+
+      a:hover {
+          background: darken($c_darkgray, 5%);
+      }
+
+      a {
+        border: 0;
+
+        #user-avatar {
+          margin: 25px;
+
+          img {
+            height: 100%;
+            width: 100%;
+          }
+
         }
 
       }
@@ -168,4 +215,94 @@ main {
 
   }
 
+}
+
+// RESPONSIVE WEB DESIGN
+
+@media (min-width:0px) {
+  .tile {
+
+    float: left;
+    height: 200px;
+    width: 100%;
+
+    .tile-content {
+      background: $c_red;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+    }
+
+  }
+}
+
+@media (min-width:650px) {
+  .tile {
+
+    float: left;
+    height: 200px;
+    min-width: 250px;
+    max-width: 400px;
+    width: 50%;
+
+    .tile-content {
+      background: $c_red;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+    }
+
+  }
+}
+
+@media (min-width:885px) {
+  .tile {
+
+    float: left;
+    height: 200px;
+    min-width: 250px;
+    max-width: 400px;
+    width: 33%;
+
+    .tile-content {
+      background: $c_red;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+    }
+
+  }
+}
+
+@media (min-width:1135px) {
+  .tile {
+
+    float: left;
+    height: 200px;
+    min-width: 250px;
+    max-width: 400px;
+    width: 25%;
+
+    .tile-content {
+      background: $c_red;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+    }
+
+  }
+}
+
+@media (min-width:1385px) {
+  .tile {
+
+    float: left;
+    height: 200px;
+    min-width: 250px;
+    max-width: 400px;
+    width: 20%;
+
+    .tile-content {
+      background: $c_red;
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+    }
+
+  }
 }
