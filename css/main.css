@@ -57,13 +57,13 @@ body {
       background-image: url("../img/arrow.png");
       background-repeat: no-repeat;
       background-position: right;
-      color: #303030 !important; }
+      color: #4a4a4a !important; }
     #main-nav ul li.menu-item-active a:hover {
-      background-color: #d8d8d8 !important;
+      background-color: #dedede !important;
       background-image: url("../img/arrow.png") !important;
       background-repeat: no-repeat !important;
       background-position: right !important;
-      color: #6FBFB9 !important; }
+      color: #000 !important; }
     #main-nav ul li.menu-item-last-element {
       position: fixed;
       bottom: 0;
@@ -112,7 +112,7 @@ main {
         background: #fafafa;
         width: calc(100% - 5px);
         height: auto;
-        padding-bottom: 30px;
+        padding-bottom: 36px;
         margin-bottom: 5px;
         position: relative; }
         main .project-page #page-content .project .project-content h2 {
@@ -131,11 +131,11 @@ main {
           bottom: 0; }
           main .project-page #page-content .project .project-content .project-categories a {
             font-size: 9px;
-            background: #2980b9;
+            background: #789BB2;
             text-decoration: none;
             text-transform: uppercase;
             border-radius: 1px;
-            padding: 2px 6px 0;
+            padding: 8px 6px 6px;
             color: #fff;
             display: inline-block; }
           main .project-page #page-content .project .project-content .project-categories a:hover {
